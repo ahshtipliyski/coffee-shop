@@ -1,0 +1,21 @@
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+@keyframes color-changer {
+  0% {
+    background-color: rgba(0, 0, 0, 0.85);
+  }
+  50% {
+    background-color: #5BACC3;
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0.85);
+  }
+}

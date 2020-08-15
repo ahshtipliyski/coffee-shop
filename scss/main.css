@@ -1,0 +1,510 @@
+@-webkit-keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes color-changer {
+  0% {
+    background-color: rgba(0, 0, 0, 0.85);
+  }
+  50% {
+    background-color: #5BACC3;
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0.85);
+  }
+}
+
+@keyframes color-changer {
+  0% {
+    background-color: rgba(0, 0, 0, 0.85);
+  }
+  50% {
+    background-color: #5BACC3;
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0.85);
+  }
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #FFF0ED;
+  font-family: Helvetica;
+  color: #393939;
+  scroll-behavior: smooth;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1, h2 {
+  font-size: 3.75rem;
+  font-weight: 100;
+}
+
+h3 {
+  font-size: 2.063rem;
+  font-weight: 100;
+}
+
+button {
+  width: 11.25rem;
+  height: 3.438rem;
+  border: 2px solid black;
+  position: relative;
+  bottom: 5px;
+  right: 5px;
+  background-color: transparent;
+  color: #FFF;
+  font-size: 1.313rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  outline: none;
+  font-family: Helvetica;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+  cursor: pointer;
+}
+
+button:active {
+  -webkit-transform: translate(5px, 5px);
+          transform: translate(5px, 5px);
+}
+
+.button__anchor {
+  text-decoration: none;
+}
+
+.button__border {
+  height: 3.438rem;
+  width: 11.25rem;
+  background-color: #5BACC3;
+  position: relative;
+}
+
+.nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-bar__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+}
+
+.nav-bar__logo-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.nav-bar__image {
+  height: 50px;
+}
+
+.nav-bar__heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-size: 3.125rem;
+  font-weight: 100;
+  margin: 0 0.3rem;
+}
+
+.nav-bar__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-bar__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 1.5rem;
+  font-weight: normal;
+  font-size: 1.313rem;
+}
+
+.nav-bar__anchor {
+  text-decoration: none;
+  color: #393939;
+}
+
+.nav-bar__special {
+  color: #5BACC3;
+}
+
+.iconsSize {
+  height: 3.125rem;
+  margin-right: 0.8rem;
+}
+
+.intro-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 8rem 0;
+}
+
+.intro-info__description p {
+  font-size: 2.063rem;
+  font-weight: 100;
+  width: 37.5rem;
+}
+
+.intro-info__picture {
+  padding: 3rem 0;
+  height: 548px;
+}
+
+.product-cards {
+  background-color: #f7f7f7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 3rem;
+  margin: 0 auto;
+}
+
+.product-cards__heading {
+  padding-top: 3.438rem;
+}
+
+.product-cards__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  padding-bottom: 2rem;
+}
+
+.product-cards__item {
+  width: 27.188rem;
+  height: 27.688rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #FFF;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 5px 9px 1px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 5px 9px 1px rgba(0, 0, 0, 0.25);
+  padding-top: 2.5rem;
+  margin: 1rem;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.product-cards__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #FFF0ED;
+  width: 100%;
+  overflow: hidden;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-top: 1.5rem;
+}
+
+.product-cards__heading-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-left: 2rem;
+  margin: 1.5rem 0;
+}
+
+.product-cards__item img {
+  padding-bottom: 2rem;
+  height: 14.875rem;
+}
+
+.product-cards__description-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.product-cards__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  width: 100%;
+  padding: 2rem 0;
+  margin: 0 auto;
+}
+
+.product-cards p.textColor {
+  font-size: 2.063rem;
+  color: #5BACC3;
+  font-weight: bold;
+}
+
+p.product-cards__heading-left {
+  font-size: 1.313rem;
+  font-weight: 100;
+}
+
+.learn-more {
+  background-color: #FFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 8rem;
+}
+
+.learn-more__information {
+  padding-bottom: 2rem;
+}
+
+.learn-more__information p {
+  font-size: 2.063rem;
+  width: 39rem;
+  font-weight: 100;
+}
+
+.learn-more__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 2rem;
+}
+
+.learn-more__background-image {
+  background-image: url("../assets/coldbrewbackground.png");
+  background-size: 27.188rem;
+  background-repeat: no-repeat;
+  height: 27.188rem;
+  width: 27.188rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1.5rem;
+}
+
+.learn-more__tilted-can {
+  height: 238px;
+}
+
+.learn-more__border-box {
+  position: absolute;
+  height: 27.188rem;
+  width: 27.188rem;
+  margin: -25px;
+  border: 4px solid #5BACC3;
+}
+
+.learn-more__background-image:hover .learn-more__tilted-can {
+  -webkit-animation: rotating 2s linear infinite;
+          animation: rotating 2s linear infinite;
+}
+
+.promotion-tag {
+  width: 100%;
+  background-color: #FFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 8rem 0;
+  margin: 0;
+}
+
+.promotion-tag p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 83.563rem;
+  height: 11.875rem;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #FFF;
+  font-size: 2.813rem;
+  font-weight: normal;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-animation-name: color-changer;
+          animation-name: color-changer;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.promotion-tag span {
+  font-weight: bold;
+}
+
+.extra-information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+}
+
+.extra-information__hours span {
+  font-weight: bold;
+}
+
+.extra-information__coffee-logoleft {
+  background-image: url("../assets/logobeans.png");
+  background-size: 100%;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0px;
+  left: 5px;
+}
+
+.extra-information__coffee-logoright {
+  background-image: url("../assets/logobeans.png");
+  background-size: 100%;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: -10px;
+  right: -30px;
+}
+
+.extra-information div {
+  padding: 3rem 0;
+}
+
+.extra-information p {
+  font-size: 1.313rem;
+  margin: 0;
+  font-weight: 100;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,176 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #FFF0ED;
+  font-family: Helvetica;
+  color: #464646;
+  scroll-behavior: smooth;
+}
+
+header {
+  height: 11.25rem;
+}
+
+h1, h2 {
+  font-size: 3.75rem;
+  font-weight: 100;
+}
+
+h3 {
+  font-size: 2.063rem;
+  font-weight: 100;
+}
+
+button {
+  height: 3.438rem;
+  width: 11.25rem;
+  background-color: #5BACC3;
+  color: #FFF;
+  font-size: 1.313rem;
+  font-family: Helvetica;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.nav-bar__logo-menu {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-bar__image {
+  height: 7.5rem;
+  padding: 1.875rem 0.5rem 1.875rem 1.875rem;
+}
+
+.nav-bar__heading {
+  display: flex;
+  align-items: flex-end;
+  font-size: 3.125rem;
+  font-weight: 100;
+}
+
+.nav-bar__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 3rem;
+}
+
+.nav-bar__item {
+  display: flex;
+  margin: 0 1.5rem;
+  font-weight: normal;
+  font-size: 1.313rem;
+}
+
+.nav-bar__anchor {
+  text-decoration: none;
+  color: #464646;
+}
+
+.nav-bar__special {
+  color: #5BACC3;
+}
+
+.backgroundImage {
+  background-image: url("../assets/coffee-circle.jpg");
+  width: 100%;
+  min-height: 50rem;
+  height: 75%;
+  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.titleBox {
+  width: 17.813rem;
+  height: 11.563rem;
+  background-color: rgba(0,0,0, 0.85);  /* Supposed to be 0.95 (looks too dark) */
+  color: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titleBoxBorder {
+  position: absolute;
+  width: 17.813rem;
+  height: 11.563rem;
+  margin: -15px;
+  border:4px solid #5BACC3;
+}
+
+.menu-options {
+  height: 74px;
+  width: 100%;
+  display: inline-block;
+  background-color: #393939;
+}
+
+.menu-options__list {
+  height: 4.625rem;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-options__item {
+  display: inline-block;
+  margin: 0 1rem 0 1rem;
+  padding-left: 1rem;
+  border-left: 0.2rem solid #5BACC3;
+  font-size: 2.063rem;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.menu-options__anchor {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.menu-items {
+  text-align: center;
+}
+
+.description {
+  width: 40%;
+  margin: 0 auto;
+  font-size: 1.125rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.price {
+  font-size: 1.125rem;
+  color: #5BACC3;
+}
+
+.menu-items__category {
+  padding: 0.3rem 0 1.5rem 0;
+}
+
+.menu-items__category h2{
+  margin: 2.625rem 0;
+}
+
+.menu-items__category h3 {
+  margin-bottom: 0.3rem;
+}
+
+.menu-items__background {
+  background-color: #f7f7f7;
+}
